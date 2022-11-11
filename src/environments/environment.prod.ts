@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  signUpBaseUrl:'http://localhost:8080/signup'
+
 };
