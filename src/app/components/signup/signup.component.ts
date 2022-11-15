@@ -19,6 +19,7 @@ export class SignupComponent implements OnInit {
   signUpNewRecord(form: NgForm) {
     let url = environment.signUpBaseUrl;
     let requestModel = form.value;
+    console.log(form.value);
     let contactRef =  document.getElementById("signUpForm")  as HTMLFormElement;
     contactRef.reset();
     this.utilityService.postDataToService(url, requestModel).subscribe(data => {

@@ -9,7 +9,7 @@
 }
 
 .body {
-  background: #3a6a7f;
+  background: linear-gradient(180deg, #191a1a, #161b45) ;
   color: #485e74;
   line-height: 1.6;
   font-family: 'Yantramanav', sans-serif;
@@ -45,6 +45,7 @@ ul {
 
 .wrapper > * {
   padding: 1em;
+  margin-top: 65px
 }
 
 /* ------------------- */
@@ -133,10 +134,12 @@ ul {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin-top: 65px
   }
 
   .wrapper > * {
     padding: 2em;
+    margin-top: 65px
   }
 
   .company-info {

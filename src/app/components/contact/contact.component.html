@@ -23,35 +23,40 @@
 		<div class="contact">
 			<h3>E-mail Us</h3>
 
-			<form id="contact-form">
+			<form id="contact-form" #contactUsForm="ngForm" (ngSubmit)="contactNewRecord(contactUsForm)">
 
 				<p>
 					<label>Name</label>
-					<input type="text" name="name" id="name" required>
+					<input type="text" name="name" id="name"[(ngModel)]="contactUsDetails.name" ngModel #name="ngModel" required>
 				</p>
 
 				<p>
 					<label>Company</label>
-					<input type="text" name="company" id="company">
+					<input type="text" name="company" id="company"[(ngModel)]="contactUsDetails.company" ngModel #company="ngModel" required>
 				</p>
 
 				<p>
 					<label>E-mail Address</label>
-					<input type="email" name="email" id="email" required>
+					<!-- <input type="email" name="email" id="email" required> -->
+					<input type="email" name="email" id="email"[(ngModel)]="contactUsDetails.email" ngModel #email="ngModel" required>
+
 				</p>
 
 				<p>
 					<label>Phone Number</label>
-					<input type="text" name="phone" id="phone">
+					<!-- <input type="text" name="phone" id="phone"> -->
+					<input type="text" name="phone" id="phone"[(ngModel)]="contactUsDetails.phone" ngModel #phone="ngModel" required>
+
 				</p>
 
 				<p class="full">
 					<label>Message</label>
-					<textarea name="message" rows="5" id="message"></textarea>
+					<textarea name="message" rows="5" id="message" [(ngModel)]="contactUsDetails.message" ngModel #message="ngModel"></textarea>
+
 				</p>
 
 				<p class="full">
-					<button type="submit">Submit</button>
+					<button type="button" class="btn btn-primary" type="submit" [disabled]="contactUsForm.invalid">Submit</button>
 				</p>
 
 			</form>
