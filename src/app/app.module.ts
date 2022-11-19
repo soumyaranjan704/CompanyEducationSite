@@ -15,6 +15,7 @@ import { IotComponent } from './components/iot/iot.component';
 import { FoundationComponent } from './components/foundation/foundation.component';
 import { MissionComponent } from './components/abouts/mission/mission.component';
 import { TeamComponent } from './components/abouts/team/team.component';
+import { CareerComponent } from './components/career/career.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TeamComponent } from './components/abouts/team/team.component';
     IotComponent,
     FoundationComponent,
     MissionComponent,
-    TeamComponent
+    TeamComponent,
+    CareerComponent
   ],
   imports: [
     BrowserModule,

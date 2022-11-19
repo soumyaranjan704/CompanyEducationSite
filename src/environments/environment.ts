@@ -5,7 +5,9 @@
 export const environment = {
   production: false,
   signUpBaseUrl:'http://localhost:8080/signup',
-  contactUsBaseUrl:'http://localhost:8080/contact'
+  contactUsBaseUrl:'http://localhost:8080/contact',
+  getNewsLetter:'http://localhost:8080/newsletter'
+
 };
 
 /*
