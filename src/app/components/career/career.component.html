@@ -102,32 +102,23 @@
 
       </div>
 
-      <div>
+   
+
+    <ng-container *ngFor="let item of carrerGetData">
         <div class="box">
             <div class="box-col box-80">
-               <h4>Business Development Manager</h4>
-              <span class="function">Superman</span>
+    
+                <h4>{{item.jobTitle}}</h4>
+                <h6><b>Experience:</b> {{item.Experience}}</h6>
+                <span class="function">{{item.companyName}}</span>
             </div>
-            
+    
             <div class="box-col box-20 text-right">
-              <a class="button">Apply</a>
+                <button class="button" data-toggle="modal" data-target="#myModal" href="">Apply</button>
             </div>
-            
-          </div>
-          
-          <div class="box">
-            <div class="box-col box-80">
-               <h4>Customer Support</h4>
-              <span class="function">Superman</span>
-            </div>
-            
-            <div class="box-col box-20 text-right">
-             <a class="button">Apply</a>
-            </div>
-          </div>
-            
-    </div>
-
+    
+        </div>
+    </ng-container>
     </section>
 
 
