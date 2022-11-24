@@ -3,12 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { MissionComponent } from './components/abouts/mission/mission.component';
 import { TeamComponent } from './components/abouts/team/team.component';
 import { BackendComponent } from './components/backend/backend.component';
-import { CareerComponent } from './components/career/career.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FoundationComponent } from './components/foundation/foundation.component';
 import { FullstackComponent } from './components/fullstack/fullstack.component';
 import { HomeComponent } from './components/home/home.component';
 import { IotComponent } from './components/iot/iot.component';
+import { SEOComponent } from './components/seo/seo.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { WebdevComponent } from './components/webdev/webdev.component';
 
@@ -54,10 +54,10 @@ const routes: Routes = [
       },
     ]
   },
-  { path: 'careers', component: CareerComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'register', component: SignupComponent },
-
+   { path: 'seo', component: SEOComponent },
+ 
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

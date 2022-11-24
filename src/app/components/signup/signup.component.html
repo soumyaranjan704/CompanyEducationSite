@@ -83,6 +83,36 @@
               </span>
             </div>
             <div class="form-group">
+                <label>Date of Filling Form</label>
+                <input
+                  type="datetime-local"
+                  class="form-control"
+                  [(ngModel)]="signUpDetails.date"
+                  name="date"
+                  ngModel
+                  #date="ngModel"
+                  appValidateDate
+                  required
+                />
+                <span
+                  class="text-danger"
+                  *ngIf="
+                    (date.touched || signUpForm.submitted) &&
+                    date.errors?.required
+                  "
+                >
+                dateoffilling is required
+                </span>
+                <span
+                  class="text-danger"
+                  *ngIf="
+                  date.touched && date.errors?.dateoffillingNotAvailable
+                  "
+                >
+                dateoffilling not available
+                </span>
+              </div>
+            <div class="form-group">
               <label>Email</label>
               <input
                 type="text"

@@ -15,7 +15,7 @@ import { IotComponent } from './components/iot/iot.component';
 import { FoundationComponent } from './components/foundation/foundation.component';
 import { MissionComponent } from './components/abouts/mission/mission.component';
 import { TeamComponent } from './components/abouts/team/team.component';
-import { CareerComponent } from './components/career/career.component';
+import { SEOComponent } from './components/seo/seo.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import { CareerComponent } from './components/career/career.component';
     FoundationComponent,
     MissionComponent,
     TeamComponent,
-    CareerComponent
+    SEOComponent,
   ],
   imports: [
     BrowserModule,

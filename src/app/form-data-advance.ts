@@ -4,6 +4,8 @@ export class SignupForm{
     public email: string;
     public mobile: string;
     public branch: string;
+    public date: string;
+
     public specialization: string;
     public year: string;
 
@@ -18,5 +20,12 @@ export class SignupForm{
         public phone: string;
         public message: string;
 
+
+    }
+
+    export class UploadCVForm{
+        public fullname: string;
+        public email: string;
+        public file: string;
 
     }
