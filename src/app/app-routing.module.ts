@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { IotComponent } from './components/iot/iot.component';
 import { SEOComponent } from './components/seo/seo.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { StudentGalleryComponent } from './components/student-gallery/student-gallery.component';
 import { WebdevComponent } from './components/webdev/webdev.component';
 
 
@@ -54,10 +55,20 @@ const routes: Routes = [
       },
     ]
   },
+  {
+    path: '', children: [
+
+      {
+        path: 'students-gallery',
+        component: StudentGalleryComponent
+      }
+     
+    ]
+  },
   { path: 'contact', component: ContactComponent },
   { path: 'register', component: SignupComponent },
    { path: 'seo', component: SEOComponent },
- 
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
