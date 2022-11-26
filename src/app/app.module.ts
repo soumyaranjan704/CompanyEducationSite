@@ -17,6 +17,8 @@ import { MissionComponent } from './components/abouts/mission/mission.component'
 import { TeamComponent } from './components/abouts/team/team.component';
 import { SEOComponent } from './components/seo/seo.component';
 import { StudentGalleryComponent } from './components/student-gallery/student-gallery.component';
+import { TrainingComponent } from './components/training/training.component';
+import { PlacementsComponent } from './components/placements/placements.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { StudentGalleryComponent } from './components/student-gallery/student-ga
     TeamComponent,
     SEOComponent,
     StudentGalleryComponent,
+    TrainingComponent,
+    PlacementsComponent,
   ],
   imports: [
     BrowserModule,

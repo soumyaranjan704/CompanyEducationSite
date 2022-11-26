@@ -8,9 +8,11 @@ import { FoundationComponent } from './components/foundation/foundation.componen
 import { FullstackComponent } from './components/fullstack/fullstack.component';
 import { HomeComponent } from './components/home/home.component';
 import { IotComponent } from './components/iot/iot.component';
+import { PlacementsComponent } from './components/placements/placements.component';
 import { SEOComponent } from './components/seo/seo.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { StudentGalleryComponent } from './components/student-gallery/student-gallery.component';
+import { TrainingComponent } from './components/training/training.component';
 import { WebdevComponent } from './components/webdev/webdev.component';
 
 
@@ -61,6 +63,14 @@ const routes: Routes = [
       {
         path: 'students-gallery',
         component: StudentGalleryComponent
+      },
+      {
+        path: 'training',
+        component: TrainingComponent
+      },
+      {
+        path: 'placements',
+        component: PlacementsComponent
       }
      
     ]
